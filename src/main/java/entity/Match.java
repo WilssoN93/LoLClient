@@ -1,53 +1,66 @@
 package entity;
 
-import java.util.List;
-
 public class Match {
 
-    private int seasonId;
-    private int queueId;
+    private int championId;
+    private String lane;
+    private Stats stats;
+    private int season;
+    private String queueType;
     private long gameId;
-    private List<ParticipantIdentity> participantIdentities;
-    private String gameVersion;
     private String platformId;
-    private String gameMode;
-    private int mapId;
-    private String gameType;
-    private List<TeamStats> teams;
-    private List<Participant> participants;
-    private long gameDuration;
-    private long gameCreation;
 
-    public List<TeamStats> getTeams() {
-        return teams;
+    @Override
+    public String toString() {
+        return "Match{" +
+                "championId=" + championId +
+                ", lane='" + lane + '\'' +
+                ", stats=" + stats +
+                ", seasonId=" + season +
+                ", queueType=" + queueType +
+                ", gameId=" + gameId +
+                ", platformId='" + platformId + '\'' +
+                '}';
     }
 
-    public void setTeams(List<TeamStats> teams) {
-        this.teams = teams;
+    public String getQueueType() {
+        return queueType;
     }
 
-    public List<Participant> getParticipants() {
-        return participants;
+    public void setQueueType(String queueType) {
+        this.queueType = queueType;
     }
 
-    public void setParticipants(List<Participant> participants) {
-        this.participants = participants;
+    public int getChampionId() {
+        return championId;
     }
 
-    public int getSeasonId() {
-        return seasonId;
+    public void setChampionId(int championId) {
+        this.championId = championId;
     }
 
-    public void setSeasonId(int seasonId) {
-        this.seasonId = seasonId;
+    public String getLane() {
+        return lane;
     }
 
-    public int getQueueId() {
-        return queueId;
+    public void setLane(String lane) {
+        this.lane = lane;
     }
 
-    public void setQueueId(int queueId) {
-        this.queueId = queueId;
+    public Stats getStats() {
+        return stats;
+    }
+
+    public void setStats(Stats stats) {
+        this.stats = stats;
+    }
+
+    public int getSeason() {
+        return season;
+    }
+
+    public void setSeason(int season) {
+        this.season = season;
     }
 
     public long getGameId() {
@@ -58,86 +71,11 @@ public class Match {
         this.gameId = gameId;
     }
 
-    public List<ParticipantIdentity> getParticipantIdentities() {
-        return participantIdentities;
-    }
-
-    public void setParticipantIdentities(List<ParticipantIdentity> participantIdentities) {
-        this.participantIdentities = participantIdentities;
-    }
-
-    public String getGameVersion() {
-        return gameVersion;
-    }
-
-    public void setGameVersion(String gameVersion) {
-        this.gameVersion = gameVersion;
-    }
-
     public String getPlatformId() {
         return platformId;
     }
 
     public void setPlatformId(String platformId) {
         this.platformId = platformId;
-    }
-
-    public String getGameMode() {
-        return gameMode;
-    }
-
-    public void setGameMode(String gameMode) {
-        this.gameMode = gameMode;
-    }
-
-    public int getMapId() {
-        return mapId;
-    }
-
-    public void setMapId(int mapId) {
-        this.mapId = mapId;
-    }
-
-    public String getGameType() {
-        return gameType;
-    }
-
-    public void setGameType(String gameType) {
-        this.gameType = gameType;
-    }
-
-    public long getGameDuration() {
-        return gameDuration;
-    }
-
-    public void setGameDuration(long gameDuration) {
-        this.gameDuration = gameDuration;
-    }
-
-    public long getGameCreation() {
-        return gameCreation;
-    }
-
-    public void setGameCreation(long gameCreation) {
-        this.gameCreation = gameCreation;
-    }
-
-    @Override
-    public String toString() {
-        return "Match{" +
-                "seasonId=" + seasonId +
-                ", queueId=" + queueId +
-                ", gameId=" + gameId +
-                ", participantIdentities=" + participantIdentities +
-                ", gameVersion='" + gameVersion + '\'' +
-                ", platformId='" + platformId + '\'' +
-                ", gameMode='" + gameMode + '\'' +
-                ", mapId=" + mapId +
-                ", gameType='" + gameType + '\'' +
-                ", teams=" + teams +
-                ", participants=" + participants +
-                ", gameDuration=" + gameDuration +
-                ", gameCreation=" + gameCreation +
-                '}';
     }
 }

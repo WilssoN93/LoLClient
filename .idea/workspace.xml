@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13c59ddf-1926-47d1-be1c-7f5fb3021372" name="Default Changelist" comment="" />
+    <list default="true" id="13c59ddf-1926-47d1-be1c-7f5fb3021372" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Calculations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/CareerStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Champion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Stats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/LCUClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/LCUClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/MatchList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/MatchList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Summoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Summoner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/LCUClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LCUClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/LCUClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LCUClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Match.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/MatchList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/MatchList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Summoner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Summoner.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +40,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Xc8N6I9jk6yxBVhM2zUorYQxzm" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -39,8 +69,7 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="statsclient" />
-      <option name="PROGRAM_PARAMETERS" value="WilssoNN RGAPI-2cad65f1-f32f-4147-b0e5-bd23aa81ee5f" />
+      <module name="stats-client" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,51 +114,48 @@
       <updated>1581333978498</updated>
       <workItem from="1581333981020" duration="13224000" />
       <workItem from="1581424209301" duration="2599000" />
+      <workItem from="1581441705465" duration="1485000" />
+      <workItem from="1581446672635" duration="13867000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Client.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/entity/Client.java</url>
           <line>27</line>
-          <properties class="Client" method="&lt;init&gt;">
+          <properties class="entity.Client">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/entity/LCUClient.java</url>
-          <line>18</line>
-          <properties method="onClientConnected">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/Client.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/entity/Client.java</url>
           <line>32</line>
           <properties field="SUMMONER_BY_NAME" class="Client" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/entity/LCUClient.java</url>
-          <line>20</line>
+          <line>31</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/entity/LCUClient.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/entity/LCUClient.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

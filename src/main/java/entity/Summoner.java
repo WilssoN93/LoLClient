@@ -2,13 +2,49 @@ package entity;
 
 public class Summoner {
 
+    private int accountId;
+    private String displayName;
+    private String internalName;
+    private int percentCompleteForNextLevel;
     private int profileIconId;
-    private String name;
     private String puuid;
-    private long summonerLevel;
-    private long revisionDate;
-    private String id;
-    private String accountId;
+    private int summonerId;
+    private int summonerLevel;
+    private int xpSinceLastLevel;
+    private int xpUntilNextLevel;
+
+
+    public int getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(int accountId) {
+        this.accountId = accountId;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
+
+    public String getInternalName() {
+        return internalName;
+    }
+
+    public void setInternalName(String internalName) {
+        this.internalName = internalName;
+    }
+
+    public int getPercentCompleteForNextLevel() {
+        return percentCompleteForNextLevel;
+    }
+
+    public void setPercentCompleteForNextLevel(int percentCompleteForNextLevel) {
+        this.percentCompleteForNextLevel = percentCompleteForNextLevel;
+    }
 
     public int getProfileIconId() {
         return profileIconId;
@@ -16,14 +52,6 @@ public class Summoner {
 
     public void setProfileIconId(int profileIconId) {
         this.profileIconId = profileIconId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getPuuid() {
@@ -34,48 +62,52 @@ public class Summoner {
         this.puuid = puuid;
     }
 
-    public long getSummonerLevel() {
+    public int getSummonerId() {
+        return summonerId;
+    }
+
+    public void setSummonerId(int summonerId) {
+        this.summonerId = summonerId;
+    }
+
+    public int getSummonerLevel() {
         return summonerLevel;
     }
 
-    public void setSummonerLevel(long summonerLevel) {
+    public void setSummonerLevel(int summonerLevel) {
         this.summonerLevel = summonerLevel;
     }
 
-    public long getRevisionDate() {
-        return revisionDate;
+    public int getXpSinceLastLevel() {
+        return xpSinceLastLevel;
     }
 
-    public void setRevisionDate(long revisionDate) {
-        this.revisionDate = revisionDate;
+    public void setXpSinceLastLevel(int xpSinceLastLevel) {
+        this.xpSinceLastLevel = xpSinceLastLevel;
     }
 
-    public String getId() {
-        return id;
+    public int getXpUntilNextLevel() {
+        return xpUntilNextLevel;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getAccountId() {
-        return accountId;
-    }
-
-    public void setAccountId(String accountId) {
-        this.accountId = accountId;
+    public void setXpUntilNextLevel(int xpUntilNextLevel) {
+        this.xpUntilNextLevel = xpUntilNextLevel;
     }
 
     @Override
     public String toString() {
         return "Summoner{" +
-                "profileIconId=" + profileIconId +
-                ", name='" + name + '\'' +
+                "accountId=" + accountId +
+                ", displayName='" + displayName + '\'' +
+                ", internalName='" + internalName + '\'' +
+                ", percentCompleteForNextLevel=" + percentCompleteForNextLevel +
+                ", profileIconId=" + profileIconId +
                 ", puuid='" + puuid + '\'' +
+                ", summonerId=" + summonerId +
                 ", summonerLevel=" + summonerLevel +
-                ", revisionDate=" + revisionDate +
-                ", id='" + id + '\'' +
-                ", accountId='" + accountId + '\'' +
+                ", xpSinceLastLevel=" + xpSinceLastLevel +
+                ", xpUntilNextLevel=" + xpUntilNextLevel +
                 '}';
     }
 }
+

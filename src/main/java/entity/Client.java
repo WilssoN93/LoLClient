@@ -1,3 +1,5 @@
+package entity;
+
 import com.google.gson.Gson;
 import entity.Match;
 import entity.MatchList;
@@ -28,6 +30,9 @@ public class Client {
     public Client(String APIKey){
         headers[9] = APIKey;
     }
+
+    public Client(){
+    }
     private final String MATCH_LIST_PATH = "https://euw1.api.riotgames.com/lol/match/v4/matchlists/by-account/";
     private final String MATCH_BY_MATCHID = "https://euw1.api.riotgames.com/lol/match/v4/matches/";
     private final String SUMMONER_BY_NAME = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
@@ -50,23 +55,7 @@ public class Client {
         return summoner;
     }
 
-    public List<MatchReference> getMatchListByAccountId(String accountId){
-
-
-        request = HttpRequest.newBuilder(URI.create(MATCH_LIST_PATH + accountId ))
-        .headers(headers).GET().build();
-        try {
-        HttpResponse<String> response = client.send(request,HttpResponse.BodyHandlers.ofString());
-        String content = response.body();
-        matches = gson.fromJson(content, MatchList.class);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
-        return matches.getMatches();
-    }
-
-    public Match getMatchByMatchId(long gameId){
+    public Match getMatchHistoryByChampionId(long gameId){
 
         client = HttpClient.newHttpClient();
         request = HttpRequest.newBuilder(URI.create(MATCH_BY_MATCHID + gameId))
