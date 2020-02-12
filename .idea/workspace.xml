@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13c59ddf-1926-47d1-be1c-7f5fb3021372" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Calculations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/CareerStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Champion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/ChampionGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/LCUClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/LCUClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/MatchList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/MatchList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Summoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Summoner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/LCUClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LCUClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/LCUClient$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LCUClient$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/LCUClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LCUClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Match.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/MatchList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/MatchList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Summoner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Summoner.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +51,7 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="stats-client" />
+      <module name="statsclient" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,7 +136,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/entity/LCUClient.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

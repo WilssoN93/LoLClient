@@ -16,8 +16,9 @@ public class LCUClient {
     Client client;
     ClientWebSocket socket;
     Set<Integer> championIds= new HashSet<>();
+    List<ChampionGame> championGames = new ArrayList<>();
     Map<Integer,Champion> champions = new HashMap<>();
-    private static DecimalFormat df = new DecimalFormat("00.0");
+    private static DecimalFormat df = new DecimalFormat("00");
 
     public LCUClient() {
         client = new Client();
@@ -90,14 +91,28 @@ public class LCUClient {
                                             }
                                         }
                                     }
-                                 double sum = wonGames / championMatch.size() * 100;
-                                    System.out.println(df.format(sum) + "% " + champions.get(championId).getName());
+                                    ChampionGame championGame = new ChampionGame();
+                                    championGame.setChampion(champions.get(championId));
+                                    championGame.setGames(championMatch);
+                                    championGame.setTotalGames(championMatch.size());
+                                    championGame.setWonGames(wonGames);
+                                    championGames.add(championGame);
                                 }
 
                             }catch (IOException e){
                                 e.printStackTrace();
                             }
                         }
+                        for (int i = championGames.size() - 1; i >= 0 ; i--) {
+                            if (championGames.get(i).getTotalGames() < 5){
+                                championGames.remove(championGames.get(i));
+                            }
+                        }
+                        championGames.sort(ChampionGame::compareTo);
+                        for (ChampionGame champGame:championGames) {
+                            System.out.println(df.format(champGame.getWonGames()/champGame.getTotalGames() * 100) + "% " + champGame.getChampion().getName() + " Number of games played: " + champGame.getTotalGames());
+                        }
+
                     }
 
                 }
